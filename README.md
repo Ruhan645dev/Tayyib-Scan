@@ -1,16 +1,26 @@
-# pure_scan
+# 🟢 Tayyib Scan
 
-A new Flutter project.
+**Tayyib Scan** is an intelligent mobile application designed to help Muslims identify Halal, Haram, and Mushbooh (doubtful) ingredients instantly. It utilizes On-Device Machine Learning (OCR) and Barcode scanning to analyze food products in real-time.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Text Scanning (OCR):** Uses Google ML Kit to read ingredients lists from packaging.
+- **Barcode Scanning:** Integrates with OpenFoodFacts API to fetch product data globally.
+- **Traffic Light Logic:**
+  - **Red:** Haram (Pork, Alcohol, E120).
+  - **Yellow:** Mushbooh (Doubtful additives).
+  -  **Green:** Safe/Halal.
+- **History:** Saves previous scans with images locally.
+- **Offline First:** Text analysis logic runs entirely on-device for speed and privacy.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Tech Stack
+
+- **Framework:** Flutter (Dart)
+- **State Management:** StatefulWidget & Async/Await
+- **AI/ML:** Google ML Kit (Text Recognition & Barcode Scanning)
+- **Ads:** Google AdMob (Native & Interstitial)
+- **Storage:** Shared Preferences & Path Provider
+- **Networking:** HTTP (OpenFoodFacts API)
+
